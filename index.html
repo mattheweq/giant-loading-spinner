@@ -10,17 +10,18 @@
   <!-- <link rel="stylesheet" href="style.css"> -->
   <style>
     :root{
-    --lines: #f33333;
-    --slices-above: #00ffff;
-    --slices-below: #00ff00;
-    --inner-hoop: #f9f9f9;
-    --outer-hoop: #ffff00;
+    --lines:#ffbfe9;
+    --slices-above:#a6e4ff;
+    --slices-below:#fff4a4;
+    --inner-hoop:#ace1d5;
+    --outer-hoop:#faafff;
     }
     body{
       background-color: #111;
     }
     .wrapper{
-      max-width: 200px;
+      width: 100vw;
+      max-width: 1140px;
       margin: 0 auto;
       display: flex;
       flex-direction: column;
@@ -32,7 +33,7 @@
       position: absolute; /* change to relative to see layers */
       top: 3%;
       height: 80%;
-      width: 80%;
+      width: 100%;
     }
     circle{
       opacity: 1;
@@ -124,5 +125,74 @@
   <text>loading...</text> 
 
 </div><!-- \wrapper -->
+
+<!--  -->
+<!--  -->
+<!--  -->
+<!-- LEFT -->
+<div class="wrapper">
+
+
+  <svg viewbox="0 -100 200 200" style="fill: transparent;">
+    <circle r="75" cy="0" cx="0" fill="transparent" stroke="var(--lines)" stroke-width="40" stroke-dasharray="1 1" pathlength="200" stroke-dashoffset="0" />
+  </svg>
+
+  <!-- <svg viewbox="-100 -100 200 200" style="fill: transparent; transform: rotate(0deg);">
+    <circle r="75" cy="0" cx="0" fill="transparent" stroke="var(--slices-below)" stroke-width="40" stroke-dasharray="25" pathlength="150" stroke-dashoffset="0" />
+  </svg> -->
+  
+  <!-- <svg viewbox="-100 -100 200 200" style="fill: transparent; transform: rotate(0deg);">
+    <circle r="75" cy="0" cx="0" fill="transparent" stroke="var(--slices-above)" stroke-width="40" stroke-dasharray="5" pathlength="50" stroke-dashoffset="0" />
+  </svg> -->
+  
+  <svg viewbox="0 -100 200 200" style="fill: transparent; transform: rotate(0deg);">
+    <circle r="75" cy="0" cx="0" fill="transparent" stroke="var(--inner-hoop)" stroke-width="5" stroke-dasharray="5" pathlength="10" stroke-dashoffset="0" />
+  </svg>
+  
+  <!-- <svg viewbox="-100 -100 200 200" style="fill: transparent; transform: rotate(0deg);">
+    <circle r="75" cy="0" cx="0" fill="transparent" stroke="var(--outer-hoop)" stroke-width="7" stroke-dasharray="10" pathlength="55" stroke-dashoffset="0" />
+  </svg> -->
+  
+  <!-- <text>loading...</text>  -->
+
+</div><!-- \wrapper -->
+
+
+
+<!--  -->
+<!--  -->
+<!--  -->
+<!--  -->
+<!-- RIGHT -->
+
+<div class="wrapper">
+
+
+  <svg viewbox="-200 -100 200 200" style="fill: transparent;">
+    <circle r="75" cy="0" cx="0" fill="transparent" stroke="var(--inner-hoop)" stroke-width="40" stroke-dasharray="1 1" pathlength="200" stroke-dashoffset="0" />
+  </svg>
+
+  <!-- <svg viewbox="-200 -100 200 200" style="fill: transparent; transform: rotate(0deg);">
+    <circle r="75" cy="0" cx="0" fill="transparent" stroke="var(--slices-below)" stroke-width="40" stroke-dasharray="25" pathlength="150" stroke-dashoffset="0" />
+  </svg> -->
+  
+  <!-- <svg viewbox="-200 -100 200 200" style="fill: transparent; transform: rotate(0deg);">
+    <circle r="75" cy="0" cx="0" fill="transparent" stroke="var(--slices-above)" stroke-width="40" stroke-dasharray="5" pathlength="50" stroke-dashoffset="0" />
+  </svg> -->
+  
+  <!-- <svg viewbox="-200 -100 200 200" style="fill: transparent; transform: rotate(0deg);">
+    <circle r="75" cy="0" cx="0" fill="transparent" stroke="var(--inner-hoop)" stroke-width="5" stroke-dasharray="5" pathlength="10" stroke-dashoffset="0" />
+  </svg> -->
+  
+  <svg viewbox="-200 -100 200 200" style="fill: transparent; transform: rotate(0deg);">
+    <circle r="75" cy="0" cx="0" fill="transparent" stroke="var(--slices-below)" stroke-width="7" stroke-dasharray="10" pathlength="55" stroke-dashoffset="0" />
+  </svg>
+  
+  <text>loading...</text> 
+
+</div><!-- \wrapper -->
+
+
+
 </body>
 </html>
