@@ -7,97 +7,14 @@
   <title>Animating SVGs</title>
   <link rel='shortcut icon' href='https://easycss.github.io/favicon/favicon.png' type='image/x-icon' />
   <script src="app.js" defer></script>
-  <!-- <link rel="stylesheet" href="style.css"> -->
-  <style>
-    :root{
-    --lines:#ffbfe9;
-    --slices-above:#a6e4ff;
-    --slices-below:#fff4a4;
-    --inner-hoop:#ace1d5;
-    --outer-hoop:#faafff;
-    }
-    body{
-      background-color: #111;
-    }
-    .wrapper{
-      width: 100vw;
-      max-width: 1140px;
-      margin: 0 auto;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-    
-    svg{
-      position: absolute; /* change to relative to see layers */
-      top: 3%;
-      height: 80%;
-      width: 100%;
-    }
-    circle{
-      opacity: 1;
-      filter: saturate(1);
-      animation: draw 3000ms ease-in backwards infinite;
-    }
-    @keyframes draw{
-      0%{
-        stroke-dashoffset: 10;
-        /* opacity: 1; */
-      }
-      20%{
-        stroke-dashoffset: 20;
-        /* opacity: .9; */
-      }
-      40%{
-        stroke-dashoffset: 30;
-        /* opacity: .7; */
-      }
-      60%{
-        stroke-dashoffset: 40;
-        /* opacity: .5; */
-      }
-      80%{
-        stroke-dashoffset: 50;
-        /* opacity: .3; */
-      }
-      100%{
-        stroke-dashoffset: 60;
-        /* opacity: .1; */
-      }
-    }
-    text{
-      position: absolute;
-      top: 37%;
-      font-size: clamp(3.5rem, 12.5vw, 7.5rem);
-      font-weight: bold;
-      line-height: 13vh;
-      color: #f7f7f7;
-      text-anchor: middle;
-      animation: pulse 3000ms ease-in infinite;
-    }
-    @keyframes pulse {
-      0%{
-        scale: .9;
-      }
-      25%{
-        scale: 1;
-      }
-      50%{
-        scale: .9;
-      }
-      75%{
-        scale: 1;
-      }
-      100%{
-        scale: .9;
-      }
-    }
-  </style>
-
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<div id="loader">
+<!--  -->
+<!--  -->
+<!--  -->
 
 <div class="wrapper">
 
@@ -191,8 +108,14 @@
   <text>loading...</text> 
 
 </div><!-- \wrapper -->
+<!--  -->
+<!--  -->
+<!--  -->
+</div>
 
 
-
+<div id="content">
+  <div class="wrapper">this is the content</div>
+</div>
 </body>
 </html>
