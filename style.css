@@ -1,3 +1,8 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 :root{
     --lines:#ffbfe9;
     --slices-above:#a6e4ff;
@@ -61,7 +66,7 @@
       top: 37%;
       font-size: clamp(3.5rem, 12.5vw, 7.5rem);
       font-weight: bold;
-      line-height: 13vh;
+      line-height: calc(10.5vh + 37%);
       color: #f7f7f7;
       text-anchor: middle;
       animation: pulse 3000ms ease-in infinite;
