@@ -1,4 +1,4 @@
-## Giant Loader Spinner
+## Giant Loading Spinner
 
 Features
   - uses SVGs
